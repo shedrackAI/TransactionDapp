@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+#popup {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    left: 50%;
+    transform: translate(-50%);
+    top: -70px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    border-radius: 10px;
+    z-index: 100000;
+}
+
+.animate {
+    animation: popup 3s ease-in-out;
+    background-color: rgb(118, 168, 247);
+}
+
+@keyframes popup {
+    0% {
+        top: -70px;
+    }
+    25% {
+        top: 50px;
+    }
+    50% {
+        top: 50px;
+    }
+    75% {
+        top: 50px;
+    }
+    100% {
+        top: -70px;
+    }
+}
